@@ -52,8 +52,12 @@ cd %{oname}
 %make_install -C build
 
 %files -n %{libname}
-
+%{_libdir}/libQXlsxQt6.so.%{major}*
+%{_libdir}/libQXlsxQt6.so.%{version}
 
 %files -n %{devname}
 %license LICENSE
 %doc README*
+%{_includedir}/QXlsxQt6/
+%{_libdir}/cmake/QXlsxQt6
+%{_libdir}/libQXlsxQt6.so
