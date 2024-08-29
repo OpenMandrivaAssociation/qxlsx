@@ -1,0 +1,11 @@
+--- a/QXlsx/source/xlsxworkbook.cpp~	2024-07-28 23:01:43.000000000 -0500
++++ b/QXlsx/source/xlsxworkbook.cpp	2024-08-28 11:36:16.182117323 -0500
+@@ -607,7 +607,7 @@
+ 
+                 AbstractSheet *sheet = addSheet(name, sheetId, type);
+                 sheet->setSheetState(state);
+-                if (relationship.target.startsWith("/")) {
++                if (relationship.target.startsWith(QLatin1String("/"))) {
+                     QString fullPath = QDir::cleanPath(relationship.target.mid(1));
+ 
+                     sheet->setFilePath(fullPath);
