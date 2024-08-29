@@ -41,11 +41,13 @@ This package contains the development files of QXlsx.
 %autosetup -p1 -n %{oname}-%{version}
 
 %build
-%cmake QXlsx \
-	            -DQT_VERSION_MAJOR:STRING=6
+cd %{oname}
+%cmake \
+	-DQT_VERSION_MAJOR:STRING=6
 %make_build
 
 %install
+cd %{oname}
 %make_install -C build
 
 %files -n %{libname}
