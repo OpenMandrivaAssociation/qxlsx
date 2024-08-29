@@ -11,6 +11,7 @@ Group:		Office
 License:	MIT
 URL:		https://github.com/QtExcel/%{oname}
 Source0:	https://github.com/QtExcel/QXlsx/archive/v%{version}/%{oname}-%{version}.tar.gz
+Patch0:		qlatin1string.patch
 
 BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Gui)
