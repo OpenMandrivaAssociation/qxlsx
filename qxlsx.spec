@@ -53,7 +53,7 @@ cd %{oname}
 
 %files -n %{libname}
 %{_libdir}/libQXlsxQt6.so.%{major}*
-%{_libdir}/libQXlsxQt6.so.1.5.0
+#{_libdir}/libQXlsxQt6.so.1.5.0
 
 %files -n %{devname}
 %license LICENSE
