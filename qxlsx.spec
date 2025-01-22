@@ -1,5 +1,5 @@
 %define oname QXlsx
-%define major		0
+%define major		1
 %define libname		%mklibname qxlsx 
 %define devname	%mklibname qxlsx -d
 
@@ -52,8 +52,8 @@ cd %{oname}
 %make_install -C build
 
 %files -n %{libname}
-#{_libdir}/libQXlsxQt6.so.%{major}*
-#{_libdir}/libQXlsxQt6.so.1.4.4
+%{_libdir}/libQXlsxQt6.so.%{major}*
+%{_libdir}/libQXlsxQt6.so.1.5.0
 
 %files -n %{devname}
 %license LICENSE
