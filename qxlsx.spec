@@ -5,13 +5,14 @@
 
 Name:		qxlsx
 Version:	1.5.0
-Release:	1
+Release:	2
 Summary:	Excel/XLSX file reader/writer library for Qt
 Group:		Office
 License:	MIT
 URL:		https://github.com/QtExcel/%{oname}
 Source0:	https://github.com/QtExcel/QXlsx/archive/v%{version}/%{oname}-%{version}.tar.gz
-#Patch0:		qlatin1string.patch
+# fix build with Qt6.10
+Patch0:		https://patch-diff.githubusercontent.com/raw/QtExcel/QXlsx/pull/401.patch
 
 BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Gui)
