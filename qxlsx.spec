@@ -4,15 +4,15 @@
 %define devname	%mklibname qxlsx -d
 
 Name:		qxlsx
-Version:	1.5.0
-Release:	2
+Version:	1.5.1.1
+Release:	1
 Summary:	Excel/XLSX file reader/writer library for Qt
 Group:		Office
 License:	MIT
 URL:		https://github.com/QtExcel/%{oname}
 Source0:	https://github.com/QtExcel/QXlsx/archive/v%{version}/%{oname}-%{version}.tar.gz
 # fix build with Qt6.10
-Patch0:		https://patch-diff.githubusercontent.com/raw/QtExcel/QXlsx/pull/401.patch
+# dropped (no longer applies): Patch0:		https://patch-diff.githubusercontent.com/raw/QtExcel/QXlsx/pull/401.patch
 
 BuildRequires:	pkgconfig(Qt6Core)
 BuildRequires:	pkgconfig(Qt6Gui)
@@ -40,7 +40,7 @@ QXlsx is a reader/writer library for Excel files (*.xlsx).
 This package contains the development files of QXlsx.
 
 %prep
-%autosetup -p1 -n %{oname}-%{version}
+%autosetup -p1 -n QXlsx-1.5.1.1
 
 %build
 cd %{oname}
