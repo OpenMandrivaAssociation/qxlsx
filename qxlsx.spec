@@ -5,7 +5,7 @@
 
 Name:		qxlsx
 Version:	1.5.1.1
-Release:	1
+Release:	2
 Summary:	Excel/XLSX file reader/writer library for Qt
 Group:		Office
 License:	MIT
