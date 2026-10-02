@@ -60,6 +60,6 @@ cd %{oname}
 %files -n %{devname}
 %license LICENSE
 %doc README*
-%{_includedir}/QXlsxQt6/
+%{_includedir}/QXlsx/
 %{_libdir}/cmake/QXlsxQt6
 %{_libdir}/libQXlsxQt6.so
